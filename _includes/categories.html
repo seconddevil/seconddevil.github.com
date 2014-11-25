@@ -3,6 +3,6 @@
 
 {% for category in site.categories %}
     
-                        <li class="list-group-item"><a href="{{ site.baseurl }}categories/{{ category | first | slugize }}/">>> {{ category | first }}</a>
+                        <li class="list-group-item"><a href="{{ site.baseurl }}/categories/{{ category | first | slugize }}/">>> {{ category | first }}</a>
                         </li>
 {% endfor %}
