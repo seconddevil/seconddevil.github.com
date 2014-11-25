@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "My Welcome"
+date:   2014-11-24 16:53:18
+categories: test
+img: http://markhalpernblog.com/wp-content/uploads/2014/11/Oh-yes-its-free-sign-150x150.jpg
+---
+Test second post
