@@ -10,10 +10,24 @@ layout: homemarkhalpernblog
                         <div class="col-xs-8">
                             <h2>
       {{ page.title }}      </h2>
-                            <p>{{ page.date | date: "%b %-d, %Y" }}</p>
+                            <p class="postdata">
+<img src="http://markhalpernblog.com/wp-content/themes/emerald-stretch/img/calendar.gif">{{ page.date | date: "%b %-d, %Y" }}&nbsp;
+<img src="http://markhalpernblog.com/wp-content/themes/emerald-stretch/img/card.gif">{{ page.author }}&nbsp;
+</p>
                             <p></p>
                             <p>{{ content }}</p>
                             <p></p>
+<br><img src="http://markhalpernblog.com/wp-content/themes/emerald-stretch/img/tag.gif">
+Posted&nbsp;in:&nbsp;
+{% for category in page.categories %}
+	<a href="{{ site.baseurl }}categories/{{category}}/"> {{ category }}</a> 
+		{% if forloop.last %}
+		{% else %}
+		,
+		{% endif %}
+                        
+{% endfor %}
+
                         </div>
 
                     </div>
