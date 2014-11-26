@@ -5,6 +5,32 @@ permalink: /about/
 navigation: true
 weight: 1
 ---
+<!--
+<ul>
+{% for org_hash in site.data.mems %}
+{% assign org = org_hash[1] %}
+  <li>
+    <a href="https://github.com/{{ org.username }}">
+      {{ org.name }}
+    </a>
+    ({{ org.members | size }} members)
+  </li>
+{% endfor %}
+</ul>
+
+
+
+{% for member in site.data.members %}
+  <li>
+{{ member }}
+{{ member.name }}
+  </li>
+{% endfor %}
+</ul>
+
+-->
+
+
 
 <div id="content">
 		  <p><a name="top"></a></p>
